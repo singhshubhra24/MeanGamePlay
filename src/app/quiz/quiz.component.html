@@ -1,0 +1,43 @@
+<div class="offset-3 col-6 mt-5">
+  <form [formGroup]="quesForm">
+    <mat-card>
+      <p class="text-center">Quiz</p>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12">
+            <p>1. this is question</p>
+          </div>        
+          <div class="col-12">
+            <mat-radio-group class="w-100">
+              <div class="col-12">
+                <mat-radio-button class="example-radio-button" value="A">
+                  Option A
+                </mat-radio-button>
+              </div>
+              <div class="col-12">
+                <mat-radio-button class="example-radio-button" value="B">
+                  Option B
+                </mat-radio-button>
+              </div>
+              <div class="col-12">
+                <mat-radio-button class="example-radio-button" value="C">
+                  Option C
+                </mat-radio-button>
+              </div>
+              <div class="col-12">
+                <mat-radio-button class="example-radio-button" value="D">
+                  Option D
+                </mat-radio-button>
+              </div>
+            </mat-radio-group>
+            </div>             
+            <div class="col-12 mt-3">
+              <button mat-raised-button color="primary" [disabled]="!quesForm.valid" type="button" (click)="submit(quesForm.value)">Next</button>
+              <button class="ml-2" mat-button color="primary" type="button" (click)="reset(quesForm.value)">Skip</button>
+            </div>
+        </div>
+      </div>
+    </mat-card>
+  </form>
+</div>
+  

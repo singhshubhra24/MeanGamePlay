@@ -1,0 +1,51 @@
+<div class="offset-3 col-6 mt-5">
+  <form [formGroup]="quesForm">
+    <mat-card>
+      <p class="text-center">Add Question</p>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12">
+            <mat-form-field class="w-100">
+              <input matInput formControlName='question' placeholder="Question" value="">
+            </mat-form-field>
+          </div>        
+          <div class="col-12">
+              <mat-form-field class="w-100">
+                <input matInput formControlName='optionA' placeholder="Option A" value="">
+              </mat-form-field>
+              <mat-form-field class="w-100">
+                <input matInput formControlName='optionB' placeholder="Option B" value="">
+              </mat-form-field>
+              <mat-form-field class="w-100">
+                <input matInput formControlName='optionC' placeholder="Option C" value="">
+              </mat-form-field>
+              <mat-form-field class="w-100">
+                <input matInput formControlName='optionD' placeholder="Option D" value="">
+              </mat-form-field>
+            </div> 
+            <div class="col-12 mt-2">
+              <mat-select placeholder="Choose Correct Answere" formControlName='correctAns'>
+                <mat-option value="A">
+                  Option A
+                </mat-option>
+                <mat-option value="B">
+                    Option B
+                </mat-option>
+                <mat-option value="C">
+                    Option C
+                </mat-option>
+                <mat-option value="D">
+                    Option D
+                </mat-option>
+              </mat-select>
+            </div>   
+            <div class="col-12 mt-3 text-center">
+              <button mat-raised-button color="primary" [disabled]="!quesForm.valid" type="button" (click)="submit(quesForm.value)">Submit</button>
+              <button class="ml-2" mat-raised-button color="primary" type="button" (click)="reset(quesForm.value)">Reset</button>
+            </div>
+        </div>
+      </div>
+    </mat-card>
+  </form>
+</div>
+  

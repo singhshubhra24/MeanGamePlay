@@ -1,0 +1,12 @@
+<div class="offset-3 col-6 mt-15">
+  <mat-card class="text-center">
+      <form [formGroup]="quizForm">
+        <mat-form-field class="w-100">
+          <input matInput placeholder="Name" formControlName='name'  value="">
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="button" (click)="submit(quizForm.value)">
+          Play Quiz
+        </button>
+      </form>
+  </mat-card>
+</div>
