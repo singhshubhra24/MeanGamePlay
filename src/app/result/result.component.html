@@ -1,0 +1,29 @@
+<div class="offset-3 col-6 mt-10">
+  <mat-card class="text-center">
+      <h3 class="text-center">Result</h3>
+        <div class="col-12">
+          <div class="row">
+            <div class="offset-2 col-8">
+              <label class="col-6">Name : </label>
+              <label class="col-6">{{UserName}}</label>
+            </div>
+            <div class="offset-2 col-8">
+              <label class="col-6">Correct Answere : </label>
+              <label class="col-6">{{CorrectAns}}</label>
+            </div>
+            <div class="offset-2 col-8">
+              <label class="col-6">Incorrect Answere : </label>
+              <label class="col-6">{{IncorrectAns}}</label>
+            </div>
+            <div class="offset-2 col-8">
+              <label class="col-6">Score : </label>
+              <label class="col-6">{{Score}}</label>
+            </div>
+            <div class="offset-2 col-8">
+              <button mat-raised-button color="primary" type="button" (click)="play()">Play Again</button>
+              <button mat-raised-button color="primary" class="ml-3" type="button" (click)="home()">Go To Home</button>
+            </div>
+          </div>
+        </div>
+  </mat-card>
+</div>

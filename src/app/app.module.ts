@@ -13,13 +13,15 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatRadioModule} from '@angular/material/radio';
 import { QuizComponent } from './quiz/quiz.component';
 import { HttpModule } from '@angular/http';
+import { ResultComponent } from './result/result.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminComponent,
     HomeComponent,
-    QuizComponent
+    QuizComponent,
+    ResultComponent
   ],
   imports: [
     BrowserModule,HttpModule,
